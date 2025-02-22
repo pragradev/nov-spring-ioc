@@ -10,8 +10,10 @@ public class PragraplexApplication {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Honda honda = context.getBean(Honda.class);
-        System.out.println(honda);
+        Honda crv = context.getBean("crv",Honda.class);
+        Honda civic = context.getBean("civic",Honda.class);
+        System.out.println(crv);
+        System.out.println(civic);
 
 //        Honda crv = new Honda("Diesel Engine", "Civic", new HydBrake());
 //        System.out.println(crv);

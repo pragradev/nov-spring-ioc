@@ -7,6 +7,11 @@
     <!-- bean definitions here -->
     <bean name="crv" class="io.pragra.learning.pragraplex.Honda">
         <constructor-arg name="engine" value="Petrol Engine"></constructor-arg>
+        <constructor-arg name="name" value="crv"></constructor-arg>
+        <constructor-arg name="brake" ref="mechBrake"></constructor-arg>
+    </bean>
+    <bean name="civic" class="io.pragra.learning.pragraplex.Honda">
+        <constructor-arg name="engine" value="Petrol Engine"></constructor-arg>
         <constructor-arg name="name" value="Civic"></constructor-arg>
         <constructor-arg name="brake" ref="mechBrake"></constructor-arg>
     </bean>

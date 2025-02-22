@@ -9,6 +9,10 @@ Springboot  Spring  java
 
 IOC -> Inversion Of Control
 xml files(beans)
+
+--> Honda, other classes, String, lists, map, set
+--> make beans out of it
+
 java annotations configuration
 java annotations
 
