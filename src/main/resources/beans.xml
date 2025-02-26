@@ -5,15 +5,24 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean name="crv" class="io.pragra.learning.pragraplex.Honda">
-        <constructor-arg name="engine" value="Petrol Engine"></constructor-arg>
-        <constructor-arg name="name" value="crv"></constructor-arg>
-        <constructor-arg name="brake" ref="mechBrake"></constructor-arg>
-    </bean>
+<!--    <bean name="crv" class="io.pragra.learning.pragraplex.Honda">-->
+<!--        <constructor-arg name="engine" value="Petrol Engine"></constructor-arg>-->
+<!--        <constructor-arg name="name" value="crv"></constructor-arg>-->
+<!--        <constructor-arg name="brake" ref="mechBrake"></constructor-arg>-->
+<!--    </bean>-->
     <bean name="civic" class="io.pragra.learning.pragraplex.Honda">
         <constructor-arg name="engine" value="Petrol Engine"></constructor-arg>
         <constructor-arg name="name" value="Civic"></constructor-arg>
         <constructor-arg name="brake" ref="mechBrake"></constructor-arg>
+    </bean>
+    <bean class="io.pragra.learning.pragraplex.Employee" name="sahil">
+        <property name="firstName" value="Sahil"></property>
+        <property name="lastName" value="P"></property>
+    </bean>
+    <bean name="mysql" class="io.pragra.learning.pragraplex.DBConnection" init-method="establishConnection" destroy-method="disconnetDatabase">
+        <property name="url" value="jdbc:mysql://123.43.45.65:3306"></property>
+        <property name="username" value="sa"></property>
+        <property name="password" value="mysql123"></property>
     </bean>
 
     <bean name="mechBrake" class="io.pragra.learning.pragraplex.MechBrake"></bean>
