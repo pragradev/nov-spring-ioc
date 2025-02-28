@@ -2,6 +2,7 @@ package io.pragra.learning.pragraplex.config;
 
 import io.pragra.learning.pragraplex.Honda;
 import io.pragra.learning.pragraplex.MechBrake;
+import io.pragra.learning.pragraplex.service.EmployeeService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,6 +19,27 @@ public class AppConfig {
         MechBrake mechBrake = new MechBrake();
         return mechBrake;
     }
+
+    @Bean
+    public String abc(){
+        return "abc";
+    }
+
+    @Bean
+    public String xyz(){
+        return "xyz";
+    }
+
+    @Bean
+    public String firstName(){
+        return "Karan";
+    }
+
+
+//    @Bean
+//    public EmployeeService employeeService(){
+//        return new EmployeeService();
+//    }
 
     /*
     * <bean name="crv" class="io.pragra.learning.pragraplex.Honda">

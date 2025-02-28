@@ -1,8 +1,16 @@
 package io.pragra.learning.pragraplex;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Employee {
     private String firstName;
     private String lastName;
+
+    public Employee(@Qualifier("firstName") String firstName) {
+        this.firstName = firstName;
+    }
 
     @Override
     public String toString() {

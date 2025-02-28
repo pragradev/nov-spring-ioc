@@ -26,4 +26,5 @@
     </bean>
 
     <bean name="mechBrake" class="io.pragra.learning.pragraplex.MechBrake"></bean>
+<!--    <bean name="empService" class="io.pragra.learning.pragraplex.service.EmployeeService"></bean>-->
 </beans>
